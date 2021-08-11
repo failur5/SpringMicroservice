@@ -1,0 +1,6 @@
+package com.devmanish.department.entity;
+
+@Entit
+public class Department {
+
+}

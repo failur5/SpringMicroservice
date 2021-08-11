@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;departmentService&apos; from expression &apos;departmentService&apos;&#x0A;- Original project: &apos;department-service&apos;&#x0A;- Variable name: &apos;departmentService&apos;&#x0A;- Destination method: &apos;com.devmanish.department.controller.DepartmentController.saveDepartment()&apos;&#x0A;- Variable expression: &apos;departmentService&apos;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;departmentService&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.devmanish.department.controller{DepartmentController.java" name="departmentService" replace="true" selection="1081 0" stamp="1628629794474" varType="false" version="1.0"/>
+</session>
