@@ -3831,3 +3831,24 @@ Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotati
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
 	... 22 more
+
+!ENTRY org.eclipse.egit.core 4 0 2021-08-12 01:04:37.685
+!MESSAGE An exception occurred during push on URI https://github.com/failur5/SpringMicroservice.git: https://github.com/failur5/SpringMicroservice.git: https://github.com/failur5/SpringMicroservice.git/info/refs?service=git-receive-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/failur5/SpringMicroservice.git: https://github.com/failur5/SpringMicroservice.git/info/refs?service=git-receive-pack not found: Not Found
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:180)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/failur5/SpringMicroservice.git: https://github.com/failur5/SpringMicroservice.git/info/refs?service=git-receive-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:522)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:554)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:467)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1368)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:170)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-08-12 01:04:37.688
+!MESSAGE Can't connect to any repository: https://github.com/failur5/SpringMicroservice.git (https://github.com/failur5/SpringMicroservice.git: https://github.com/failur5/SpringMicroservice.git/info/refs?service=git-receive-pack not found: Not Found)

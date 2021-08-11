@@ -1,5 +1,0 @@
-package com.devmanish.department.repository;
-
-public interface DepartmentRepository {
-
-}
